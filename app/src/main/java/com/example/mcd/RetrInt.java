@@ -8,6 +8,6 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 
 public interface RetrInt {
-    @GET("v6/latest/{currency}")
+    @GET("/hounaida/{currency}")
     Call<JsonObject> getExchangeCurrency(@Path("currency") String currency);
 }

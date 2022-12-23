@@ -152,4 +152,13 @@
         <item>ZAR</item>
         <item>ZMW</item>
     </string-array>
+    <string-array name="taux">
+        <item>12</item>
+        <item>13</item>
+        <item>15</item>
+        <item>4</item>
+        <item>7</item>
+        <item>7</item>
+
+    </string-array>
 </resources>

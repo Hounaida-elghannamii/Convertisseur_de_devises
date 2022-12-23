@@ -11,7 +11,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="30sp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,12 +29,18 @@
             android:textSize="32sp"
             android:textStyle="bold" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/dc" />
+
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20sp"
-            android:layout_marginTop="70sp"
             android:layout_marginRight="20sp"
             android:text="From"
             android:textColor="#86031BA1"
@@ -73,6 +79,18 @@
                 android:entries="@array/devise"
                 android:spinnerMode="dropdown" />
 
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint=" 0.00"
+                android:padding="5sp"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#818181"
+                android:textSize="18sp" />
+
         </LinearLayout>
 
         <TextView
@@ -80,7 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20sp"
-            android:layout_marginTop="20sp"
+            android:layout_marginTop="10sp"
             android:layout_marginRight="20sp"
             android:text="To"
             android:textColor="#86031BA1"
@@ -117,21 +135,30 @@
                 android:entries="@array/devise"
                 android:spinnerMode="dropdown" />
 
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint=" 0.00"
+                android:padding="5sp"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#818181"
+                android:textSize="18sp" />
+
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="90sp"
-            android:backgroundTint="#86031BA1"
-            android:text="Conversion"
-            android:textColor="#FFFFFF"
-            app:cornerRadius="15sp"
-            app:icon="@android:drawable/ic_popup_sync"
-            app:iconGravity="end"
-            app:iconTint="#FFFFFF" />
+            android:layout_margin="40sp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#86031BA1"
+            android:textSize="16sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

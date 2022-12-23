@@ -12,7 +12,7 @@ public class RetBuild {
     public static Retrofit getRetrofitInstance(){
         if(retrofit==null){
             retrofit=new retrofit2.Retrofit.Builder()
-                    .baseUrl("https://open.er-api.com/")
+                    .baseUrl("http://142.93.14.153:8090/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
 
